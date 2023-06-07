@@ -391,7 +391,7 @@ simulate_experiment = function(fasta=NULL, gtf=NULL, seqpath=NULL,
 
     if(is.null(size)){
         size = basemeans / 3
-    }else if(class(size) == 'numeric'){
+    }else if(inherits(size,"numeric")){
         if(is.matrix(basemeans)){
             num_rows = nrow(basemeans)
             num_cols = ncol(basemeans)
