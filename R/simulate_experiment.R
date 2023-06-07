@@ -400,7 +400,7 @@ simulate_experiment = function(fasta=NULL, gtf=NULL, seqpath=NULL,
             num_cols = 1
         }
         size = matrix(size, nrow=num_rows, ncol=num_cols)
-    }else if(class(size) == 'matrix'){
+    }else if(inherits(size,"matrix")){
         if(!is.matrix(basemeans)){
             stop('If you provide a matrix for size, you also need a matrix for reads_per_transcript.')
         }
