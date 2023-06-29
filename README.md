@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/alyssafrazee/polyester.svg?branch=master)](https://travis-ci.org/alyssafrazee/polyester)
-
+# CW revised some functions to avoid error
+especially the is.matrix() that R now will give both "array" "matrix"
 # Introduction
 
 Polyester is an R package designed to simulate RNA sequencing experiments with differential transcript expression. 
